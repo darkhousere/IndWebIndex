@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Footer = () => {
   const [visitCount, setVisitCount] = useState(null);
 
-  useEffect(() => {
+  /*useEffect(() => {
     const fetchVisitCount = async () => {
       try {
         const response = await fetch('/api/visit-count');
@@ -16,10 +16,11 @@ const Footer = () => {
 
     fetchVisitCount();
   }, []);
+  */
 
   return (
     <div className='text-xs whitespace-nowrap text-purple-900 dark:text-rose-200 py-4'>
-      <a 
+      /*<a 
         href='https://nowscott.notion.site/134f941cf9b880e1b00ee5bdf55fd71d?pvs=105' 
         target='_blank' 
         rel='noopener noreferrer' 
@@ -31,6 +32,7 @@ const Footer = () => {
         {visitCount !== null ? `访问量：${visitCount}` : '访问量：加载中...'}
       </p>
       <p>Copyright © 2021 - NowScott</p>
+      */
     </div>
   );
 };
